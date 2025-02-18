@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div#mydiv{
+            width:150px;
+            height: 150px;
+            background-color: crimson;
+            position: relative;
+            animation-name: example1;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-direction: reverse;
+            animation-delay: 2s;
+
+
+        }
+
+
+        div#mycircle{
+            width:150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: crimson;
+            position: relative;
+            animation-name: example2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+
+        }
+
+        div#myoval{
+            width:150px;
+            height: 150px;
+            border-radius: 75%;
+            background-color: crimson;
+            position: relative;
+            animation-name: example3;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-direction: reverse;
+            animation-delay: 2s;
+
+
+        }
+
+
+        /* @keyframes example1{
+        from{background-color: crimson; }
+        to {background-color: coral; }
+        /* } THis changes the background color between to colors*/   
+
+
+        @keyframes example1{
+            0%{background-color: crimson; left:0px; top:0px;}
+            25%{background-color: coral; left:500px; top:0px; }
+            50%{background-color: yellowgreen; left:500px; top:500px; }
+            75%{background-color: black; left:0px; top:500px; }
+            100%{background-color: yellow; left:0px; top:0px;}
+        }
+
+        @keyframes example2{
+            0%{background-color: crimson; left:0px; top:0px;}
+            25%{background-color: coral; left:500px; top:0px; }
+            50%{background-color: yellowgreen; left:500px; top:500px; }
+            75%{background-color: black; left:0px; top:500px; }
+            100%{background-color: yellow; left:0px; top:0px;}
+        }
+
+        @keyframes example3{
+            0%{background-color: crimson; left:0px; top:0px;}
+            25%{background-color: coral; left:300px; top:0px; }
+            50%{background-color: yellowgreen; left:300px; top:300px; }
+            75%{background-color: black; left:0px; top:300px; }
+            100%{background-color: yellow; left:0px; top:0px;}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="mydiv"></div>
+    <br><br>
+    <div id="mycircle"></div>
+    <br><br>
+    <div id="myoval"></div>
+</body>
+</html>
