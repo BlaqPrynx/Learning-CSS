@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postioning</title>
+
+    <style>
+        .tryabsolute{
+            position: absolute;left: 80px; top:  20px;
+            background-color: crimson;
+            border: 1 px solid chartreuse;
+        }
+
+        /* Relative Spans the whole line */
+
+        .tryrelative{
+            position: relative;left: 80px; top: 60px;
+            background-color: crimson;
+            border: 1 px solid chartreuse;
+        }
+
+        /* Fixed Position remains stagnant when scrolled up and down. */
+        .fixed{
+            position: fixed;left: 140px; top:200px;
+            background-color: crimson;
+         border: 1 px solid chartreuse;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <p class="tryabsolute">This is Positioned Absolutely</p>
+
+    <br>
+
+    <p class="tryrelative">This is Positioned Relatively</p>
+
+    <br>
+
+    <p class="fixed">This positioned Fixed</p>
+    
+</body>
+</html>
